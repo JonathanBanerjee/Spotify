@@ -33,7 +33,7 @@
 }
 
 // Heading for the footer
-@mixin promotion-header-six {
+@mixin promotion-header {
   font-family: CircularSp;
   color: #ffffff;
   font-weight: 700;
@@ -43,7 +43,7 @@
 // Mobile Screen Size
 @media (max-width: 400px) {
   .promotion h6 {
-    @include promotion-header-six();
+    @include promotion-header();
     font-size: 13px;
   }
 
@@ -60,7 +60,7 @@
 // Tablet screen size
 @media (max-width: 800px) {
   .promotion h6 {
-    @include promotion-header-six();
+    @include promotion-header();
     font-size: 14px;
   }
 
@@ -94,7 +94,7 @@
 }
 
 .promotion h6 {
-  @include promotion-header-six();
+  @include promotion-header();
   font-size: 14px;
 }
 
