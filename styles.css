@@ -22,9 +22,6 @@
     font-weight: 400;
     flex-shrink: 2;
   }
-  .promotion button {
-    display: none;
-  }
   .promotion {
     position: fixed;
     bottom: 0;
@@ -50,9 +47,6 @@
     font-weight: 400;
     flex-shrink: 2;
   }
-  .promotion button {
-    display: none;
-  }
   .promotion {
     position: fixed;
     bottom: 0;
@@ -64,38 +58,45 @@
     padding: 11px 24px 7px 15px;
   }
 }
-@media (max-width: 1600px) {
-  .promotion {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-  }
-  .promotion button {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
-    cursor: pointer;
-  }
-  .promotion h6 {
-    font-family: CircularSp;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  .promotion p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    flex-shrink: 2;
-  }
+.promotion {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+
+.promotion button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.promotion h6 {
+  font-family: CircularSp;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.promotion p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 2;
+}
+
+.promotion-text {
+  min-width: 600px;
 }/*# sourceMappingURL=styles.css.map */

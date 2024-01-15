@@ -59,9 +59,9 @@
     flex-shrink: 2;
   }
 
-  .promotion button {
-    display: none;
-  }
+  //   .promotion button {
+  //     display: none;
+  //   }
   .promotion {
     @include promotion();
     padding: 11px 24px 7px 15px;
@@ -86,9 +86,9 @@
     flex-shrink: 2;
   }
 
-  .promotion button {
-    display: none;
-  }
+  //   .promotion button {
+  //     display: none;
+  //   }
 
   .promotion {
     @include promotion();
@@ -96,37 +96,40 @@
   }
 }
 
-@media (max-width: 1600px) {
-  .promotion {
-    @include promotion();
-    padding: 15px 40px;
-  }
+.promotion {
+  @include promotion();
+  padding: 15px 40px;
+  overflow: hidden;
+}
 
-  .promotion button {
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
-    cursor: pointer;
-  }
+.promotion button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  min-width: 200px;
+}
 
-  // Heading for the footer
-  .promotion h6 {
-    font-family: CircularSp;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+// Heading for the footer
+.promotion h6 {
+  font-family: CircularSp;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
-  // Paragraph for the footer
-  .promotion p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    flex-shrink: 2;
-  }
+// Paragraph for the footer
+.promotion p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 2;
+}
+.promotion-text {
+  min-width: 600px;
 }
