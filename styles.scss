@@ -13,6 +13,7 @@
   font-weight: 400;
 }
 
+//Footer background
 @mixin promotion {
   position: fixed;
   bottom: 0;
@@ -23,72 +24,49 @@
   justify-content: space-between;
 }
 
-// @mixin card {
-//   display: flex;
-//   gap: 20px;
-//   overflow: hidden;
-//   min-width: 140px;
-//   width: 160px;
-//   padding: 15px;
-//   background-color: #181818;
-//   border-radius: 6px;
-//   cursor: pointer;
-//   transition: all ease 0.4s;
-// }
+// Paragraph for the footer
+@mixin promotion-paragraph {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 2;
+}
 
-// .card li {
-//   @include card();
-// }
+// Heading for the footer
+@mixin promotion-header-six {
+  font-family: CircularSp;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
 // Mobile Screen Size
 @media (max-width: 400px) {
-  // Heading for the footer
   .promotion h6 {
-    font-family: CircularSp;
-    color: #ffffff;
-    font-weight: 700;
+    @include promotion-header-six();
     font-size: 13px;
-    margin-bottom: 10px;
   }
 
-  // Paragraph for the footer
   .promotion p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    flex-shrink: 2;
+    @include promotion-paragraph();
   }
 
-  //   .promotion button {
-  //     display: none;
-  //   }
   .promotion {
     @include promotion();
     padding: 11px 24px 7px 15px;
   }
 }
 
+// Tablet screen size
 @media (max-width: 800px) {
-  // Heading for the footer
   .promotion h6 {
-    font-family: CircularSp;
-    color: #ffffff;
-    font-weight: 700;
+    @include promotion-header-six();
     font-size: 14px;
-    margin-bottom: 10px;
   }
 
-  // Paragraph for the footer
   .promotion p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    flex-shrink: 2;
+    @include promotion-paragraph();
   }
-
-  //   .promotion button {
-  //     display: none;
-  //   }
 
   .promotion {
     @include promotion();
@@ -96,6 +74,7 @@
   }
 }
 
+// Large screen sizes
 .promotion {
   @include promotion();
   padding: 15px 40px;
@@ -114,22 +93,31 @@
   min-width: 200px;
 }
 
-// Heading for the footer
 .promotion h6 {
-  font-family: CircularSp;
-  color: #ffffff;
-  font-weight: 700;
+  @include promotion-header-six();
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
-// Paragraph for the footer
 .promotion p {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  flex-shrink: 2;
+  @include promotion-paragraph();
 }
 .promotion-text {
   min-width: 600px;
 }
+
+// @mixin card {
+//   display: flex;
+//   gap: 20px;
+//   overflow: hidden;
+//   min-width: 140px;
+//   width: 160px;
+//   padding: 15px;
+//   background-color: #181818;
+//   border-radius: 6px;
+//   cursor: pointer;
+//   transition: all ease 0.4s;
+// }
+
+// .card li {
+//   @include card();
+// }
