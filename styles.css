@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+body {
+  background-color: #121212;
+  font-family: "Montserrat", sans-serif;
+}
+
 @font-face {
   font-family: CircularSp;
   src: url(./CircularSp.woff) format("woff");
@@ -75,11 +80,24 @@
   color: #000000;
   font-size: 16px;
   font-weight: bold;
-  padding: 14px 30px;
   border: 0px;
   border-radius: 40px;
   cursor: pointer;
   min-width: 200px;
+  padding: 14px 30px;
+}
+
+.promotion button:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 14px 30px;
+  font-size: 18px;
 }
 
 .promotion h6 {
@@ -99,4 +117,94 @@
 
 .promotion-text {
   min-width: 600px;
+}
+
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+  background-color: burlywood;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 30px;
+  min-width: 750px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .navbar ul {
+  list-style: none;
+}
+
+.topbar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.navbar .login-button button {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+.navbar .login-button button:hover {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+.topbar .navbar ul li.divider {
+  color: #b3b3b3;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
