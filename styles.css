@@ -268,4 +268,26 @@ body {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+.playlists > button {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.podcasts > button {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
 }/*# sourceMappingURL=styles.css.map */

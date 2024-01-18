@@ -66,6 +66,18 @@ body {
   margin-left: 20px;
 }
 
+//mixin for the sidebar-button
+@mixin sidebar-button {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 // Mixin for the layout of the topbar
 @mixin text-decoration {
   color: #b3b3b3;
@@ -274,4 +286,12 @@ body {
   color: #ffffff;
   font-size: 15px;
   @include promotion-header();
+}
+
+.playlists > button {
+  @include sidebar-button();
+}
+
+.podcasts > button {
+  @include sidebar-button();
 }
