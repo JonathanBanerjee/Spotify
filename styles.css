@@ -207,4 +207,65 @@ body {
   font-size: 26px;
   margin: 0px 20px;
   width: auto;
+}
+
+.nav-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  background-color: blanchedalmond;
+  padding: 0;
+}
+
+.sidecard {
+  list-style: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #494a49;
+  padding: 15px;
+  width: 190px;
+  height: 75px;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  flex-flow: column wrap;
+}
+
+.top-left ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.librarycard {
+  list-style: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #282928;
+}
+
+.librarycard h2 {
+  color: #ffffff;
+  font-size: 15px;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: CircularSp;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.top-left ul li:hover {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: CircularSp;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
