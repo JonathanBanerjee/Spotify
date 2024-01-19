@@ -248,7 +248,21 @@ body {
 }
 
 .librarycard h2 {
+  color: #b3b3b3 !important;
+  font-size: 15px;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: CircularSp;
   color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.librarycard h2:hover {
+  color: #f2f2f2 !important;
   font-size: 15px;
   color: #b3b3b3;
   text-decoration: none;
@@ -262,7 +276,7 @@ body {
 }
 
 .top-left ul li:hover {
-  color: #ffffff;
+  color: #f2f2f2;
   font-size: 15px;
   font-family: CircularSp;
   color: #ffffff;

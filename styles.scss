@@ -1,3 +1,12 @@
+//Declaring CSS variables
+
+// Button colours
+$button-hover: #f2f2f2;
+$button-text: #000000;
+
+// Navigation
+$navbar-default: #b3b3b3;
+
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +53,7 @@ body {
 
 // Mixin for the Sign up button
 @mixin promotion-button {
-  color: #000000;
+  color: $button-text;
   font-size: 16px;
   font-weight: bold;
   border: 0px;
@@ -56,7 +65,7 @@ body {
 
 // Mixin for the Login button
 @mixin topbar-button {
-  color: #000000;
+  color: $button-text;
   font-size: 16px;
   font-weight: bold;
   padding: 14px 30px;
@@ -68,7 +77,7 @@ body {
 
 //mixin for the sidebar-button
 @mixin sidebar-button {
-  color: #000000;
+  color: $button-text;
   font-size: 14px;
   font-weight: bold;
   padding: 10px 10px;
@@ -134,7 +143,7 @@ body {
 }
 
 .promotion button:hover {
-  background-color: #f2f2f2;
+  background-color: $button-hover;
   @include promotion-button();
   font-size: 18px;
 }
@@ -215,7 +224,7 @@ body {
 // Hovering over the login button
 .navbar .login-button button:hover {
   @include topbar-button();
-  background-color: #f2f2f2;
+  background-color: $button-hover;
   font-size: 18px;
 }
 
@@ -257,16 +266,6 @@ body {
 .top-left ul li {
   list-style: none;
   margin-top: 20px;
-  // display: flex-start;
-  // padding: 10px 0px;
-  // background-color: orange;
-  // list-style: none;
-  // margin-top: 20px;
-  // border-radius: 20px;
-  // border-color: blue;
-  // padding: 15px;
-  // width: 190px;
-  // height: 75px;
 }
 
 .librarycard {
@@ -277,13 +276,21 @@ body {
 }
 
 .librarycard h2 {
-  color: #ffffff;
+  color: $navbar-default !important;
   font-size: 15px;
   @include text-decoration();
   @include promotion-header();
 }
+
+.librarycard h2:hover {
+  color: $button-hover !important;
+  font-size: 15px;
+  @include text-decoration();
+  @include promotion-header();
+}
+
 .top-left ul li:hover {
-  color: #ffffff;
+  color: $button-hover;
   font-size: 15px;
   @include promotion-header();
 }
