@@ -302,3 +302,9 @@ body {
 .podcasts > button {
   @include sidebar-button();
 }
+
+.cookies {
+  @include text-decoration();
+  display: flex;
+  justify-content: space-between;
+}

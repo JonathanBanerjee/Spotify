@@ -304,4 +304,14 @@ body {
   border-radius: 100px;
   cursor: pointer;
   margin-left: 20px;
+}
+
+.cookies {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */
