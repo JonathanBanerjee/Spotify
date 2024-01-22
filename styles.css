@@ -223,7 +223,7 @@ body {
   list-style: none;
   margin-top: 10px;
   border-radius: 20px;
-  background-color: #494a49;
+  background-color: #000000;
   padding: 15px;
   width: 190px;
   height: 75px;
@@ -235,21 +235,87 @@ body {
   flex-flow: column wrap;
 }
 
+.playlists.sidecard {
+  margin-top: 20px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 5px;
+  height: 100px;
+}
+
+.playlists.sidecard h3 {
+  color: white;
+}
+
+.playlists.sidecard p {
+  color: white;
+  font-size: 12px;
+}
+
+.podcasts.sidecard {
+  margin-top: 20px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 15px;
+  height: 150px;
+}
+
+.podcasts.sidecard h3 {
+  color: white;
+}
+
+.podcasts.sidecard p {
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.top-left {
+  position: relative;
+  height: 45px;
+  border-bottom: 30px;
+}
+
 .top-left ul li {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.top-left ul li:hover {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: CircularSp;
+  color: #ffffff;
 }
 
 .librarycard {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 20px;
-  background-color: #282928;
+  background-color: #181818;
+  position: fixed;
+  height: 79.5%;
+}
+
+.librarycard img.cds {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 24px;
+  margin-top: 20px;
+}
+
+.librarycard img.cds:hover {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 24px;
+  margin-top: 20px;
+  fill: blue;
 }
 
 .librarycard h2 {
   color: #b3b3b3 !important;
-  font-size: 15px;
+  font-size: 20px !important;
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
@@ -275,35 +341,56 @@ body {
   margin-bottom: 10px;
 }
 
-.top-left ul li:hover {
-  color: #f2f2f2;
-  font-size: 15px;
-  font-family: CircularSp;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
 .playlists > button {
   color: #000000;
-  font-size: 14px;
   font-weight: bold;
   padding: 10px 10px;
   border: 0px;
   border-radius: 100px;
   cursor: pointer;
   margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.playlists > button:hover {
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .podcasts > button {
   color: #000000;
-  font-size: 14px;
   font-weight: bold;
   padding: 10px 10px;
   border: 0px;
   border-radius: 100px;
   cursor: pointer;
   margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.podcasts > button:hover {
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .cookies {
@@ -312,6 +399,79 @@ body {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
+  position: absolute;
+  bottom: 100px;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  left: 15px;
+}
+
+.cookies:hover {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 100px;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  left: 15px;
+  text-decoration: underline;
+}
+
+.language {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: black;
+  padding: 5px;
+  padding-right: 20px;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.language:hover {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: black;
+  padding: 5px;
+  padding-right: 20px;
+  margin-right: 1rem;
+  border: 2px solid white;
+}
+
+.language img {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
 }/*# sourceMappingURL=styles.css.map */

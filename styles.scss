@@ -78,7 +78,6 @@ body {
 //mixin for the sidebar-button
 @mixin sidebar-button {
   color: $button-text;
-  font-size: 14px;
   font-weight: bold;
   padding: 10px 10px;
   border: 0px;
@@ -94,6 +93,35 @@ body {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+// Mixin for the cookies text
+@mixin cookies {
+  position: absolute;
+  bottom: 100px;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  left: 15px;
+}
+
+// Mixin for the languages button
+@mixin languages {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: black;
+  padding: 5px;
+  padding-right: 20px;
+  margin-right: 1rem;
 }
 
 // Mobile Screen Size
@@ -251,7 +279,7 @@ body {
   list-style: none;
   margin-top: 10px;
   border-radius: 20px;
-  background-color: #494a49;
+  background-color: #000000;
   padding: 15px;
   width: 190px;
   height: 75px;
@@ -263,21 +291,89 @@ body {
   flex-flow: column wrap;
 }
 
+.playlists.sidecard {
+  margin-top: 20px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 5px;
+  height: 100px;
+}
+
+.playlists.sidecard h3 {
+  color: white;
+}
+
+.playlists.sidecard p {
+  color: white;
+  font-size: 12px;
+}
+
+.podcasts.sidecard {
+  margin-top: 20px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 15px;
+  height: 150px;
+}
+
+.podcasts.sidecard h3 {
+  color: white;
+}
+
+.podcasts.sidecard p {
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+.top-left {
+  position: relative;
+  height: 45px;
+  border-bottom: 30px;
+}
+
+// Home and Search (top-left text)
 .top-left ul li {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.top-left ul li:hover {
+  color: $button-hover;
+  font-size: 15px;
+  font-family: CircularSp;
+  color: #ffffff;
 }
 
 .librarycard {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 20px;
-  background-color: #282928;
+  background-color: #181818;
+  position: fixed;
+  height: 79.5%;
+}
+
+.librarycard img.cds {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 24px;
+  margin-top: 20px;
+}
+
+.librarycard img.cds:hover {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 24px;
+  margin-top: 20px;
+  fill: blue;
 }
 
 .librarycard h2 {
   color: $navbar-default !important;
-  font-size: 15px;
+  font-size: 20px !important;
+  // margin-left: 20px;
   @include text-decoration();
   @include promotion-header();
 }
@@ -289,22 +385,59 @@ body {
   @include promotion-header();
 }
 
-.top-left ul li:hover {
-  color: $button-hover;
-  font-size: 15px;
-  @include promotion-header();
-}
-
 .playlists > button {
   @include sidebar-button();
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.playlists > button:hover {
+  @include sidebar-button();
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .podcasts > button {
   @include sidebar-button();
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.podcasts > button:hover {
+  @include sidebar-button();
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .cookies {
   @include text-decoration();
-  display: flex;
-  justify-content: space-between;
+  @include cookies();
+}
+
+.cookies:hover {
+  @include text-decoration();
+  @include cookies();
+  text-decoration: underline;
+}
+
+.language {
+  @include text-decoration();
+  @include languages();
+  border: 1px solid white;
+}
+
+.language:hover {
+  @include text-decoration();
+  @include languages();
+  border: 2px solid white;
+}
+
+.language img {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
 }
