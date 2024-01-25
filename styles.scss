@@ -46,7 +46,7 @@ body {
 // Heading for the footer
 @mixin promotion-header {
   font-family: CircularSp;
-  color: #ffffff;
+  // color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -98,29 +98,32 @@ body {
 // Mixin for the cookies text
 @mixin cookies {
   position: absolute;
-  bottom: 100px;
+  bottom: 15%;
   color: #b3b3b3;
   font-weight: 500;
   text-decoration: none;
   font-size: 12px;
-  left: 15px;
+  left: 25px;
 }
 
 // Mixin for the languages button
 @mixin languages {
   position: absolute;
-  bottom: 25px;
-  left: 10px;
-  display: flex;
+  bottom: 125px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 3%;
+  left: 18px;
+  display: inline-flex;
   align-items: center;
   color: #b3b3b3;
   font-weight: 500;
   text-decoration: none;
-  font-size: 12px;
-  border-radius: 40px;
+  font-size: 14px;
+  border-radius: 92px;
   background-color: black;
-  padding: 5px;
-  padding-right: 20px;
+  padding: 3px;
+  padding-right: 9px;
   margin-right: 1rem;
 }
 
@@ -191,7 +194,7 @@ body {
 .main-container {
   margin-left: 245px;
   margin-bottom: 100px;
-  background-color: burlywood;
+  background-color: lightcoral;
 }
 
 .topbar {
@@ -269,8 +272,8 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 220px;
-  background-color: blanchedalmond;
+  width: 310px;
+  background-color: blue;
   padding: 0;
 }
 
@@ -282,13 +285,11 @@ body {
   background-color: #000000;
   padding: 15px;
   width: 190px;
-  height: 75px;
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
-  flex-flow: column wrap;
 }
 
 .playlists.sidecard {
@@ -296,8 +297,8 @@ body {
   background-color: rgb(29, 29, 29);
   border-radius: 15px;
   padding: 10px;
+  width: 270px;
   margin-left: 5px;
-  height: 100px;
 }
 
 .playlists.sidecard h3 {
@@ -310,10 +311,10 @@ body {
 }
 
 .podcasts.sidecard {
-  margin-top: 20px;
   background-color: rgb(29, 29, 29);
   border-radius: 15px;
-  height: 150px;
+  width: 260px;
+  margin-left: 5px;
 }
 
 .podcasts.sidecard h3 {
@@ -321,15 +322,15 @@ body {
 }
 
 .podcasts.sidecard p {
-  margin-top: 10px;
   color: white;
   font-size: 12px;
 }
 
 .top-left {
   position: relative;
-  height: 45px;
   border-bottom: 30px;
+  width: 270px;
+  margin-left: 5px;
 }
 
 // Home and Search (top-left text)
@@ -340,10 +341,51 @@ body {
 }
 
 .top-left ul li:hover {
-  color: $button-hover;
-  font-size: 15px;
+  font-size: 14px;
   font-family: CircularSp;
-  color: #ffffff;
+  color: $button-hover;
+}
+
+.home-image {
+  margin-top: 5px;
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(236deg) brightness(102%) contrast(103%);
+}
+.home-image path {
+  fill: white;
+}
+
+.search-image {
+  margin-top: 5px;
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 30px;
+  filter: invert(90%) sepia(0%) saturate(2326%) hue-rotate(136deg)
+    brightness(89%) contrast(65%);
+}
+.search-image:hover {
+  margin-top: 5px;
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(296deg)
+    brightness(107%) contrast(107%);
+}
+
+.logo {
+  margin-top: 5px;
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 80px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(236deg) brightness(102%) contrast(103%);
 }
 
 .librarycard {
@@ -352,49 +394,89 @@ body {
   border-radius: 20px;
   background-color: #181818;
   position: fixed;
-  height: 79.5%;
-}
-
-.librarycard img.cds {
-  height: 30px;
-  margin-right: 5px;
-  margin-left: 24px;
-  margin-top: 20px;
-}
-
-.librarycard img.cds:hover {
-  height: 30px;
-  margin-right: 5px;
-  margin-left: 24px;
-  margin-top: 20px;
-  fill: blue;
+  height: 64.5%;
+  width: 300px;
+  margin-left: 5px;
 }
 
 .librarycard h2 {
   color: $navbar-default !important;
-  font-size: 20px !important;
-  // margin-left: 20px;
+  font-size: 16px !important;
+  margin-left: 15px;
+  margin-top: 25px;
   @include text-decoration();
   @include promotion-header();
 }
 
 .librarycard h2:hover {
   color: $button-hover !important;
-  font-size: 15px;
+  font-size: 35px;
   @include text-decoration();
   @include promotion-header();
 }
 
+.librarycard h3 {
+  color: $navbar-default !important;
+  font-size: 20px !important;
+  @include text-decoration();
+  @include promotion-header();
+}
+
+.librarycard h3:hover {
+  color: $button-hover !important;
+  font-size: 35px;
+  @include text-decoration();
+  @include promotion-header();
+}
+
+.librarycard img.cds {
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 30px;
+  margin-right: 10px;
+  filter: invert(90%) sepia(0%) saturate(2326%) hue-rotate(136deg)
+    brightness(89%) contrast(65%);
+}
+
+.librarycard img.cds:hover {
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(296deg)
+    brightness(107%) contrast(107%);
+}
+
+.librarycard img.plus {
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 20px;
+  margin-left: 95px;
+  filter: invert(90%) sepia(0%) saturate(2326%) hue-rotate(136deg)
+    brightness(89%) contrast(65%);
+}
+
+.librarycard img.plus:hover {
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  width: 20px;
+  filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(296deg)
+    brightness(107%) contrast(107%);
+}
+
 .playlists > button {
   @include sidebar-button();
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
   font-size: 14px;
 }
 
 .playlists > button:hover {
   @include sidebar-button();
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
   font-size: 15px;
 }
@@ -437,7 +519,10 @@ body {
 }
 
 .language img {
-  height: 30px;
+  height: 16px;
+  width: 16px;
   margin-right: 5px;
   margin-left: 10px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(236deg) brightness(102%) contrast(103%);
 }
