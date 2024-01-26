@@ -46,7 +46,7 @@ body {
 // Heading for the footer
 @mixin promotion-header {
   font-family: CircularSp;
-  // color: #ffffff;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -394,36 +394,34 @@ body {
   border-radius: 20px;
   background-color: #181818;
   position: fixed;
-  height: 64.5%;
+  height: 66.5%;
   width: 300px;
   margin-left: 5px;
 }
 
 .librarycard h2 {
-  color: $navbar-default !important;
-  font-size: 16px !important;
   margin-left: 15px;
-  margin-top: 25px;
-  @include text-decoration();
-  @include promotion-header();
+  margin-top: 14px;
+  color: $navbar-default;
+  font-size: 14px;
 }
 
 .librarycard h2:hover {
-  color: $button-hover !important;
-  font-size: 35px;
-  @include text-decoration();
-  @include promotion-header();
+  margin-left: 15px;
+  margin-top: 14px;
+  color: $button-hover;
+  font-size: 14px;
 }
 
 .librarycard h3 {
-  color: $navbar-default !important;
-  font-size: 20px !important;
+  color: $navbar-default; //!important;
+  font-size: 20px; //!important;
   @include text-decoration();
   @include promotion-header();
 }
 
 .librarycard h3:hover {
-  color: $button-hover !important;
+  color: $button-hover; // !important;
   font-size: 35px;
   @include text-decoration();
   @include promotion-header();

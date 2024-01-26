@@ -16,6 +16,7 @@ body {
 @media (max-width: 400px) {
   .promotion h6 {
     font-family: CircularSp;
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 13px;
@@ -40,6 +41,7 @@ body {
 @media (max-width: 800px) {
   .promotion h6 {
     font-family: CircularSp;
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 14px;
@@ -100,6 +102,7 @@ body {
 
 .promotion h6 {
   font-family: CircularSp;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 14px;
@@ -329,54 +332,41 @@ body {
   border-radius: 20px;
   background-color: #181818;
   position: fixed;
-  height: 64.5%;
+  height: 66.5%;
   width: 300px;
   margin-left: 5px;
 }
 
 .librarycard h2 {
-  color: #b3b3b3 !important;
-  font-size: 16px !important;
   margin-left: 15px;
-  margin-top: 25px;
+  margin-top: 14px;
   color: #b3b3b3;
-  text-decoration: none;
-  font-weight: bold;
   font-size: 14px;
-  letter-spacing: 1px;
-  font-family: CircularSp;
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .librarycard h2:hover {
-  color: #f2f2f2 !important;
-  font-size: 35px;
-  color: #b3b3b3;
-  text-decoration: none;
-  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 14px;
+  color: #f2f2f2;
   font-size: 14px;
-  letter-spacing: 1px;
-  font-family: CircularSp;
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .librarycard h3 {
-  color: #b3b3b3 !important;
-  font-size: 20px !important;
+  color: #b3b3b3;
+  font-size: 20px;
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
   font-family: CircularSp;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .librarycard h3:hover {
-  color: #f2f2f2 !important;
+  color: #f2f2f2;
   font-size: 35px;
   color: #b3b3b3;
   text-decoration: none;
@@ -384,6 +374,7 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   font-family: CircularSp;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 10px;
 }
