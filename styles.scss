@@ -26,7 +26,7 @@ body {
 
 //Footer background
 @mixin promotion {
-  position: fixed;
+  margin-top: 31%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -141,6 +141,7 @@ body {
   .promotion {
     @include promotion();
     padding: 11px 24px 7px 15px;
+    // z-index: 10;
   }
 }
 
@@ -169,14 +170,29 @@ body {
 }
 
 .promotion button {
-  background-color: #ffffff;
-  @include promotion-button();
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 14px;
 }
 
 .promotion button:hover {
-  background-color: $button-hover;
-  @include promotion-button();
-  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .promotion h6 {
@@ -269,12 +285,11 @@ body {
 
 .nav-wrapper {
   position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
   width: 310px;
-  background-color: blue;
+  top: 0;
+  left: 0;
   padding: 0;
+  display: flex;
 }
 
 // Removing more bullet points
