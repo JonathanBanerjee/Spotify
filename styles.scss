@@ -211,7 +211,7 @@ body {
 .main-container {
   margin-left: 245px;
   margin-bottom: 100px;
-  background-color: lightcoral;
+  background-color: #090909;
 }
 
 .topbar {
@@ -241,7 +241,7 @@ body {
   font-size: 18px;
   border: 0px;
   background-color: #090909;
-  margin-right: 10px;
+  margin-left: 300px;
 }
 
 // Topbar list items
@@ -541,22 +541,7 @@ body {
     hue-rotate(236deg) brightness(102%) contrast(103%);
 }
 
-// .card {
-//   display: flex;
-//   gap: 20px;
-//   overflow: hidden;
-// }
-// .card ul li {
-//   list-style: none;
-//   min-width: 140px;
-//   width: 160px;
-//   padding: 15px;
-//   background-color: green;
-//   border-radius: 6px;
-//   // cursor: pointer;
-//   // transition: all ease 0.4s;
-// }
-
+//Adding the spotify playlists in the main section
 .spotify-playlists {
   padding: 20px 40px;
 }
@@ -564,48 +549,33 @@ body {
   color: #ffffff;
   font-size: 22px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
-.spotify-playlists .list {
+.spotify-playlists .playlist-container {
   display: flex;
   gap: 20px;
   overflow: hidden;
 }
-.spotify-playlists .list .item {
-  min-width: 140px;
-  width: 160px;
+.spotify-playlists .playlist-container .card {
+  margin-left: 28px;
+  min-width: 120px;
+  width: 120px;
   padding: 15px;
   background-color: #181818;
   border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
 }
-.spotify-playlists .list .item:hover {
+.spotify-playlists .playlist-container .card:hover {
   background-color: #252525;
 }
-.spotify-playlists .list .item img {
+.spotify-playlists .playlist-container .card img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
-.spotify-playlists .list .item .play {
-  position: relative;
-}
-.spotify-playlists .list .item .play .fa {
-  position: absolute;
-  right: 10px;
-  top: -60px;
-  padding: 18px;
-  background-color: #1db954;
-  border-radius: 100%;
-  opacity: 0;
-  transition: all ease 0.4s;
-}
-.spotify-playlists .list .item:hover .play .fa {
-  opacity: 1;
-  transform: translateY(-20px);
-}
-.spotify-playlists .list .item h4 {
+
+.spotify-playlists .playlist-container .card h4 {
   color: #ffffff;
   font-size: 14px;
   margin-bottom: 10px;
@@ -613,7 +583,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.spotify-playlists .list .item p {
+.spotify-playlists .playlist-container .card p {
   color: #989898;
   font-size: 12px;
   line-height: 20px;
